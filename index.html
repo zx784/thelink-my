@@ -139,7 +139,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 40px;
-      align-items: start;
+      align-items: stretch;
     }
 
     /* ─── Left Column ────────────────────────────────────────── */
@@ -413,6 +413,9 @@
       overflow: hidden;
       box-shadow: var(--shadow), 0 0 0 1px rgba(255,255,255,0.15);
       animation: offer-glow 3s 1s ease-in-out infinite;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
     }
 
     .offer-header {
@@ -449,6 +452,9 @@
     .offer-body {
       padding: 32px;
       color: #1e293b;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
     }
 
     /* Price Display */
@@ -1117,36 +1123,6 @@
           </div>
 
         </div><!-- /offer-card -->
-
-        <!-- How It Works Card -->
-        <div class="how-card">
-          <div class="how-card-title">How It Works</div>
-          <div class="how-steps">
-            <div class="how-step">
-              <div class="how-num">1</div>
-              <div class="how-step-text">
-                <strong>Submit Your Offer</strong>
-                <span>Enter your bid above → sent directly via WhatsApp</span>
-              </div>
-            </div>
-            <div class="how-connector"></div>
-            <div class="how-step">
-              <div class="how-num">2</div>
-              <div class="how-step-text">
-                <strong>We Agree on Price</strong>
-                <span>Quick negotiation, no middlemen, no commission</span>
-              </div>
-            </div>
-            <div class="how-connector"></div>
-            <div class="how-step">
-              <div class="how-num">3</div>
-              <div class="how-step-text">
-                <strong>Domain Transferred</strong>
-                <span>Secure &amp; fast handover — you own it within 24 hours</span>
-              </div>
-            </div>
-          </div>
-        </div>
 
       </div><!-- /RIGHT COLUMN -->
 
