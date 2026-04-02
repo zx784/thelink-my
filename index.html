@@ -280,6 +280,7 @@
 
     /* ─── Seller Profile Card ─────────────────────────────────── */
     .seller-card {
+      margin-top: auto;
       background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
@@ -450,11 +451,12 @@
     .offer-lock-icon svg { color: #fff; width: 20px; height: 20px; }
 
     .offer-body {
-      padding: 32px;
+      padding: 32px 36px;
       color: #1e293b;
       flex: 1;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
     }
 
     /* Price Display */
@@ -681,55 +683,6 @@
     }
 
     .trust-badge svg { width: 14px; height: 14px; color: #22c55e; }
-
-    /* ─── Value Features (Fills empty space) ─────────────────── */
-    .value-features {
-      margin-top: 32px;
-      margin-bottom: auto; /* pulls domain tags to bottom, pushes self up */
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      padding: 24px;
-      background: linear-gradient(135deg, rgba(108,99,255,0.04) 0%, rgba(56,189,248,0.04) 100%);
-      border: 1px dashed rgba(108,99,255,0.25);
-      border-radius: var(--radius-md);
-    }
-
-    .value-features-title {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      margin-bottom: 4px;
-    }
-
-    .value-feature {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-    }
-
-    .value-feature svg {
-      color: var(--accent);
-      width: 18px;
-      height: 18px;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-
-    .value-feature-text {
-      font-size: 13px;
-      color: #475569;
-      line-height: 1.5;
-    }
-    .value-feature-text strong {
-      display: block;
-      color: #0f172a;
-      font-size: 14px;
-      margin-bottom: 2px;
-    }
 
     /* ─── WhatsApp Direct Card ───────────────────────────────── */
     .wa-card {
@@ -1171,25 +1124,6 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                 <div class="value-feature-text">
                   <strong>Future-Proof Investment</strong>
-                  Premium '.my' domains are finite. Secure the absolute best name for your business.
-                </div>
-              </div>
-            </div>
-
-            <!-- Why This Domain (Fills the gap) -->
-            <div class="value-features">
-              <div class="value-features-title">Why thelink.my?</div>
-              <div class="value-feature">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
-                <div class="value-feature-text">
-                  <strong>Instant Authority</strong>
-                  Command respect from day one with a premium, memorable brand asset.
-                </div>
-              </div>
-              <div class="value-feature">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                <div class="value-feature-text">
-                  <strong>Future-Proof Value</strong>
                   Premium '.my' domains are finite. Secure the absolute best name for your business.
                 </div>
               </div>
