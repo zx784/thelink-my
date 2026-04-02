@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>thelink.my — Premium Domain For Sale</title>
+  <meta name="description" content="thelink.my is a premium .MY domain name available for purchase. Short, brandable, and perfect for tech, fintech, and digital platforms in Malaysia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ─── Reset & Base ───────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --c1: #0f0c29;
+      --c2: #302b63;
+      --c3: #24243e;
+      --accent: #6c63ff;
+      --accent2: #a78bfa;
+      --accent3: #38bdf8;
+      --gold: #f59e0b;
+      --white: #ffffff;
+      --soft: rgba(255,255,255,0.07);
+      --soft2: rgba(255,255,255,0.13);
+      --border: rgba(255,255,255,0.12);
+      --text-primary: #ffffff;
+      --text-secondary: rgba(255,255,255,0.72);
+      --text-muted: rgba(255,255,255,0.45);
+      --card-bg: rgba(255,255,255,0.06);
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --radius-sm: 10px;
+      --shadow: 0 24px 64px rgba(0,0,0,0.45);
+      --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, var(--c1) 0%, var(--c2) 50%, var(--c3) 100%);
+      min-height: 100vh;
+      color: var(--text-primary);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* ─── Animated Background ───────────────────────────────── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 20% 20%, rgba(108,99,255,0.22) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 80%, rgba(56,189,248,0.18) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 40% at 50% 50%, rgba(167,139,250,0.10) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.18;
+      pointer-events: none;
+      z-index: 0;
+      animation: float 12s ease-in-out infinite;
+    }
+    .orb-1 { width: 600px; height: 600px; background: var(--accent); top: -200px; left: -200px; animation-delay: 0s; }
+    .orb-2 { width: 500px; height: 500px; background: var(--accent3); bottom: -150px; right: -150px; animation-delay: 4s; }
+    .orb-3 { width: 350px; height: 350px; background: var(--accent2); top: 40%; left: 50%; animation-delay: 8s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-40px) scale(1.05); }
+    }
+
+    /* ─── Layout ────────────────────────────────────────────── */
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+
+    /* ─── Navigation Bar ─────────────────────────────────────── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      margin-bottom: 56px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent2), var(--accent3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(108,99,255,0.18);
+      border: 1px solid rgba(108,99,255,0.35);
+      border-radius: 100px;
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent2);
+      letter-spacing: 0.3px;
+    }
+
+    .nav-badge::before {
+      content: '';
+      width: 8px; height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(0.85); }
+    }
+
+    /* ─── Main Grid ──────────────────────────────────────────── */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    /* ─── Left Column ────────────────────────────────────────── */
+    .left-col {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    /* ─── Hero ───────────────────────────────────────────────── */
+    .hero {
+      animation: fadeUp 0.7s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 20px;
+    }
+
+    .hero-eyebrow svg { width: 16px; height: 16px; }
+
+    .hero-domain {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(52px, 8vw, 90px);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -3px;
+      background: linear-gradient(135deg, #ffffff 0%, var(--accent2) 60%, var(--accent3) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 20px;
+    }
+
+    .hero-tagline {
+      font-size: clamp(16px, 2.2vw, 20px);
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 480px;
+      margin-bottom: 32px;
+    }
+
+    /* ─── Features List ──────────────────────────────────────── */
+    .features-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 18px;
+      font-size: 15px;
+      color: var(--text-secondary);
+      transition: var(--transition);
+      animation: fadeUp 0.7s ease both;
+    }
+
+    .feature-item:nth-child(1) { animation-delay: 0.1s; }
+    .feature-item:nth-child(2) { animation-delay: 0.2s; }
+    .feature-item:nth-child(3) { animation-delay: 0.3s; }
+    .feature-item:nth-child(4) { animation-delay: 0.4s; }
+
+    .feature-item:hover {
+      background: var(--soft2);
+      border-color: rgba(108,99,255,0.35);
+      color: var(--white);
+      transform: translateX(4px);
+    }
+
+    .feature-icon {
+      width: 34px; height: 34px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 16px;
+    }
+
+    /* ─── Stats Row ──────────────────────────────────────────── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      animation: fadeUp 0.7s 0.5s ease both;
+    }
+
+    .stat-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px 16px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .stat-box:hover {
+      background: var(--soft2);
+      border-color: rgba(108,99,255,0.4);
+      transform: translateY(-3px);
+    }
+
+    .stat-number {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent2), var(--accent3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ─── Seller Profile Card ─────────────────────────────────── */
+    .seller-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: var(--transition);
+      animation: fadeUp 0.7s 0.6s ease both;
+    }
+
+    .seller-card:hover {
+      background: var(--soft2);
+      border-color: rgba(108,99,255,0.35);
+    }
+
+    .seller-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      flex-shrink: 0;
+      box-shadow: 0 0 0 6px rgba(108,99,255,0.15);
+    }
+
+    .seller-info { flex: 1; }
+
+    .seller-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .seller-title {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .seller-badges {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 100px;
+      letter-spacing: 0.3px;
+    }
+
+    .badge-verified {
+      background: rgba(34,197,94,0.15);
+      border: 1px solid rgba(34,197,94,0.3);
+      color: #4ade80;
+    }
+
+    .badge-domain {
+      background: rgba(108,99,255,0.15);
+      border: 1px solid rgba(108,99,255,0.3);
+      color: var(--accent2);
+    }
+
+    .badge-malaysia {
+      background: rgba(239,68,68,0.12);
+      border: 1px solid rgba(239,68,68,0.25);
+      color: #f87171;
+    }
+
+    .seller-wa-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #fff;
+      border-radius: 100px;
+      padding: 10px 18px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: var(--transition);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .seller-wa-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgba(37,211,102,0.35);
+    }
+
+    .seller-wa-btn svg { width: 18px; height: 18px; }
+
+    /* ─── Right Column ───────────────────────────────────────── */
+    .right-col {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      animation: fadeUp 0.7s 0.2s ease both;
+    }
+
+    /* ─── Offer Card ─────────────────────────────────────────── */
+    .offer-card {
+      background: rgba(255,255,255,0.97);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow), 0 0 0 1px rgba(255,255,255,0.15);
+    }
+
+    .offer-header {
+      background: linear-gradient(135deg, var(--accent) 0%, #a78bfa 100%);
+      padding: 22px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .offer-header-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .offer-header-sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.8);
+    }
+
+    .offer-lock-icon {
+      width: 40px; height: 40px;
+      background: rgba(255,255,255,0.18);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .offer-lock-icon svg { color: #fff; width: 20px; height: 20px; }
+
+    .offer-body {
+      padding: 32px;
+      color: #1e293b;
+    }
+
+    /* Price Display */
+    .price-display {
+      background: linear-gradient(135deg, #f8faff 0%, #eef2ff 100%);
+      border: 2px solid #e0e7ff;
+      border-radius: var(--radius-md);
+      padding: 22px 24px;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .price-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .price-value {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .price-note {
+      font-size: 13px;
+      color: #9ca3af;
+      margin-top: 4px;
+    }
+
+    .price-tag {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 100px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* Form */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 8px;
+    }
+
+    .form-label span {
+      color: var(--accent);
+    }
+
+    .input-wrap {
+      position: relative;
+    }
+
+    .input-prefix {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 17px;
+      font-weight: 700;
+      color: #6b7280;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .offer-input {
+      width: 100%;
+      border: 2px solid #e5e7eb;
+      border-radius: var(--radius-sm);
+      padding: 15px 16px 15px 42px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #1e293b;
+      font-family: 'Space Grotesk', sans-serif;
+      background: #f9fafb;
+      transition: var(--transition);
+      outline: none;
+      -moz-appearance: textfield;
+    }
+
+    .offer-input::-webkit-inner-spin-button,
+    .offer-input::-webkit-outer-spin-button { -webkit-appearance: none; }
+
+    .offer-input:focus {
+      border-color: var(--accent);
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(108,99,255,0.12);
+    }
+
+    .form-hint {
+      font-size: 12px;
+      color: #9ca3af;
+      margin-top: 6px;
+    }
+
+    .offer-name-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .text-input {
+      width: 100%;
+      border: 2px solid #e5e7eb;
+      border-radius: var(--radius-sm);
+      padding: 13px 16px;
+      font-size: 15px;
+      color: #1e293b;
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      transition: var(--transition);
+      outline: none;
+    }
+
+    .text-input:focus {
+      border-color: var(--accent);
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(108,99,255,0.12);
+    }
+
+    /* CTA Button */
+    .cta-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 100px;
+      background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+      padding: 18px 28px;
+      cursor: pointer;
+      transition: var(--transition);
+      margin-top: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-btn::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 48px rgba(37,211,102,0.4);
+    }
+
+    .cta-btn:hover::after { opacity: 1; }
+    .cta-btn:active { transform: translateY(0); }
+
+    .cta-btn svg { width: 22px; height: 22px; }
+
+    .cta-note {
+      text-align: center;
+      font-size: 12px;
+      color: #9ca3af;
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+
+    /* Divider */
+    .or-divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 24px 0 20px;
+      color: #9ca3af;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .or-divider::before, .or-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #e5e7eb;
+    }
+
+    /* Trust Badges */
+    .trust-row {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #6b7280;
+      background: #f3f4f6;
+      padding: 6px 14px;
+      border-radius: 100px;
+    }
+
+    .trust-badge svg { width: 14px; height: 14px; color: #22c55e; }
+
+    /* ─── WhatsApp Direct Card ───────────────────────────────── */
+    .wa-card {
+      background: linear-gradient(135deg, rgba(37,211,102,0.12) 0%, rgba(18,140,126,0.10) 100%);
+      border: 1px solid rgba(37,211,102,0.25);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      transition: var(--transition);
+    }
+
+    .wa-card:hover {
+      border-color: rgba(37,211,102,0.45);
+      background: linear-gradient(135deg, rgba(37,211,102,0.18) 0%, rgba(18,140,126,0.14) 100%);
+    }
+
+    .wa-card-info {}
+
+    .wa-card-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .wa-card-sub {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    .wa-direct-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #fff;
+      border-radius: 100px;
+      padding: 14px 24px;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: var(--transition);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .wa-direct-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 32px rgba(37,211,102,0.4);
+    }
+
+    .wa-direct-btn svg { width: 20px; height: 20px; }
+
+    /* ─── Domain Tags ────────────────────────────────────────── */
+    .domain-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0 32px 28px;
+    }
+
+    .domain-tag {
+      background: linear-gradient(135deg, rgba(108,99,255,0.1), rgba(167,139,250,0.08));
+      border: 1px solid rgba(108,99,255,0.2);
+      border-radius: var(--radius-sm);
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #6b7280;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* ─── Footer ─────────────────────────────────────────────── */
+    footer {
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-left {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .footer-left strong { color: var(--text-secondary); }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-link {
+      font-size: 13px;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-link:hover { color: var(--accent2); }
+
+    /* ─── Toast Notification ─────────────────────────────────── */
+    #toast {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      background: #1e293b;
+      color: #fff;
+      padding: 14px 24px;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.4);
+      z-index: 9999;
+      transform: translateY(80px);
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-left: 4px solid #25d366;
+    }
+
+    #toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* ─── Responsive ─────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .main-grid { grid-template-columns: 1fr; gap: 32px; }
+      .left-col { order: 2; }
+      .right-col { order: 1; }
+      .hero-domain { font-size: clamp(48px, 10vw, 72px); }
+    }
+
+    @media (max-width: 768px) {
+      .wrapper { padding: 20px 16px 48px; }
+      nav { margin-bottom: 36px; }
+      .nav-logo { font-size: 18px; }
+      .nav-badge { font-size: 11px; padding: 6px 14px; }
+      .offer-header { padding: 18px 22px; }
+      .offer-body { padding: 22px; }
+      .price-value { font-size: 34px; }
+      .offer-name-row { grid-template-columns: 1fr; }
+      .stats-row { grid-template-columns: repeat(3, 1fr); }
+      .wa-card { flex-direction: column; align-items: flex-start; text-align: left; }
+      .wa-direct-btn { width: 100%; justify-content: center; }
+      footer { flex-direction: column; align-items: flex-start; gap: 12px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-domain { font-size: 42px; letter-spacing: -2px; }
+      .stats-row { grid-template-columns: 1fr 1fr; }
+      .stats-row .stat-box:last-child { grid-column: 1 / -1; }
+      .seller-card { flex-direction: column; text-align: center; }
+      .seller-badges { justify-content: center; }
+      .seller-wa-btn { width: 100%; justify-content: center; }
+      .price-display { flex-direction: column; gap: 12px; align-items: flex-start; }
+      .trust-row { justify-content: flex-start; }
+      #toast { left: 16px; right: 16px; bottom: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="wrapper">
+
+    <!-- ─── Nav ─────────────────────────────────────────── -->
+    <nav>
+      <div class="nav-logo">thelink.my</div>
+      <div class="nav-badge">Available for Purchase</div>
+    </nav>
+
+    <!-- ─── Main Grid ─────────────────────────────────────── -->
+    <div class="main-grid">
+
+      <!-- LEFT COLUMN -->
+      <div class="left-col">
+
+        <!-- Hero -->
+        <div class="hero">
+          <div class="hero-eyebrow">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+            </svg>
+            Premium Domain For Sale
+          </div>
+          <h1 class="hero-domain">thelink.my</h1>
+          <p class="hero-tagline">
+            A short, powerful, and brandable <strong>.MY</strong> domain — perfectly positioned for tech startups, fintech platforms, market­places, and digital businesses in Malaysia and beyond.
+          </p>
+        </div>
+
+        <!-- Features -->
+        <div class="features-list">
+          <div class="feature-item">
+            <span class="feature-icon">⚡</span>
+            <span>Short &amp; memorable — just 7 characters, easy to type and recall</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🇲🇾</span>
+            <span>Authentic Malaysian .my TLD — builds instant local trust</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🔗</span>
+            <span>Versatile brand — link platforms, fintech, SaaS, e-commerce &amp; more</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🚀</span>
+            <span>Ready to transfer — no setup needed, immediate handover</span>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-row">
+          <div class="stat-box">
+            <div class="stat-number">7</div>
+            <div class="stat-label">Characters</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">.MY</div>
+            <div class="stat-label">Premium TLD</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Brandable</div>
+          </div>
+        </div>
+
+        <!-- Seller Profile -->
+        <div class="seller-card">
+          <img class="seller-avatar" src="assets/profile.jpg" alt="Domain Owner" />
+          <div class="seller-info">
+            <div class="seller-name">Domain Owner</div>
+            <div class="seller-title">Direct Sale · No Brokers · No Commission</div>
+            <div class="seller-badges">
+              <span class="badge badge-verified">✓ Verified Seller</span>
+              <span class="badge badge-domain">Domain Investor</span>
+              <span class="badge badge-malaysia">🇲🇾 Malaysia</span>
+            </div>
+          </div>
+          <a class="seller-wa-btn" href="https://wa.me/60172720482?text=Hi%2C%20I%20found%20your%20thelink.my%20domain%20for%20sale.%20I%27d%20like%20to%20learn%20more." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Chat Now
+          </a>
+        </div>
+
+      </div><!-- /LEFT COLUMN -->
+
+      <!-- RIGHT COLUMN -->
+      <div class="right-col">
+
+        <!-- Offer Card -->
+        <div class="offer-card">
+          <div class="offer-header">
+            <div>
+              <div class="offer-header-title">Make Your Offer</div>
+              <div class="offer-header-sub">Enter your bid and connect via WhatsApp instantly</div>
+            </div>
+            <div class="offer-lock-icon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.955 11.955 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="offer-body">
+
+            <!-- Price -->
+            <div class="price-display">
+              <div>
+                <div class="price-label">Asking Price</div>
+                <div class="price-value" id="asking-price">RM 85,000</div>
+                <div class="price-note">Or best offer · Negotiable</div>
+              </div>
+              <div class="price-tag">PREMIUM</div>
+            </div>
+
+            <!-- Bid Form -->
+            <form id="offer-form" onsubmit="submitOffer(event)">
+
+              <div class="form-group">
+                <label class="form-label" for="bid-amount">Your Bid Amount <span>*</span></label>
+                <div class="input-wrap">
+                  <span class="input-prefix">RM</span>
+                  <input
+                    class="offer-input"
+                    id="bid-amount"
+                    type="number"
+                    placeholder="50,000"
+                    min="1"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-hint">Minimum offer accepted: RM 1 · All serious offers considered</div>
+              </div>
+
+              <div class="offer-name-row form-group">
+                <div>
+                  <label class="form-label" for="bid-name">Your Name</label>
+                  <input class="text-input" id="bid-name" type="text" placeholder="e.g. Ahmad" autocomplete="off" />
+                </div>
+                <div>
+                  <label class="form-label" for="bid-company">Company (Optional)</label>
+                  <input class="text-input" id="bid-company" type="text" placeholder="e.g. MyStartup Sdn Bhd" autocomplete="off" />
+                </div>
+              </div>
+
+              <button class="cta-btn" type="submit" id="submit-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Send Offer via WhatsApp
+              </button>
+              <div class="cta-note">
+                🔒 You'll be redirected to WhatsApp with your offer pre-filled.<br/>
+                Your info is only sent to the domain owner.
+              </div>
+
+            </form>
+
+            <div class="or-divider">or</div>
+
+            <!-- Trust badges -->
+            <div class="trust-row">
+              <div class="trust-badge">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+                Direct from Owner
+              </div>
+              <div class="trust-badge">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+                No Hidden Fees
+              </div>
+              <div class="trust-badge">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+                Fast Transfer
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Domain tags -->
+          <div class="domain-tags">
+            <span class="domain-tag">Short</span>
+            <span class="domain-tag">Brandable</span>
+            <span class="domain-tag">.MY TLD</span>
+            <span class="domain-tag">Tech</span>
+            <span class="domain-tag">Fintech</span>
+            <span class="domain-tag">Marketplace</span>
+            <span class="domain-tag">SaaS</span>
+            <span class="domain-tag">Startup</span>
+          </div>
+
+        </div><!-- /offer-card -->
+
+        <!-- WhatsApp Direct Contact Card -->
+        <div class="wa-card">
+          <div class="wa-card-info">
+            <div class="wa-card-title">💬 Prefer to Talk First?</div>
+            <div class="wa-card-sub">Chat directly with the owner on WhatsApp before making a bid.</div>
+          </div>
+          <a class="wa-direct-btn" id="wa-direct" href="https://wa.me/60172720482?text=Hi%2C%20I%27m%20interested%20in%20purchasing%20thelink.my.%20Can%20we%20discuss%3F" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp Now
+          </a>
+        </div>
+
+      </div><!-- /RIGHT COLUMN -->
+
+    </div><!-- /main-grid -->
+
+    <!-- ─── Footer ─────────────────────────────────────────── -->
+    <footer>
+      <div class="footer-left">
+        <strong>thelink.my</strong> · Premium Domain For Sale · Listed Directly by Owner
+      </div>
+      <div class="footer-right">
+        <a class="footer-link" href="https://wa.me/60172720482" target="_blank" rel="noopener">+60 17-272 0482</a>
+        <span class="footer-link" style="cursor:default">© 2025</span>
+      </div>
+    </footer>
+
+  </div><!-- /wrapper -->
+
+  <!-- Toast -->
+  <div id="toast">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="#25d366">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span id="toast-msg">Redirecting to WhatsApp…</span>
+  </div>
+
+  <script>
+    // ── Format number with commas ──
+    function formatRM(n) {
+      return 'RM ' + Number(n).toLocaleString('en-MY');
+    }
+
+    // ── Show toast notification ──
+    function showToast(msg, duration = 3500) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-msg');
+      toastMsg.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), duration);
+    }
+
+    // ── Submit Offer → WhatsApp ──
+    function submitOffer(e) {
+      e.preventDefault();
+
+      const amountRaw = document.getElementById('bid-amount').value.trim();
+      const name      = document.getElementById('bid-name').value.trim();
+      const company   = document.getElementById('bid-company').value.trim();
+
+      if (!amountRaw || isNaN(amountRaw) || Number(amountRaw) <= 0) {
+        document.getElementById('bid-amount').focus();
+        return;
+      }
+
+      const amount = Number(amountRaw);
+      const formattedAmount = formatRM(amount);
+
+      // Build WhatsApp message
+      let msg = `Hello! I would like to make an offer for the domain *thelink.my*.\n\n`;
+      msg += `💰 *My Offer: ${formattedAmount}*\n`;
+      if (name)    msg += `👤 Name: ${name}\n`;
+      if (company) msg += `🏢 Company: ${company}\n`;
+      msg += `\nPlease let me know if this works for you. Thank you!`;
+
+      const waNumber = '60172720482';
+      const waURL = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
+
+      // Show toast
+      showToast(`🚀 Sending your offer of ${formattedAmount} via WhatsApp…`);
+
+      // Delay redirect slightly so toast shows
+      setTimeout(() => {
+        window.open(waURL, '_blank', 'noopener,noreferrer');
+      }, 600);
+    }
+
+    // ── Animate stats counters ──
+    function animateCounter(el, target, suffix = '', duration = 1500) {
+      const start = performance.now();
+      const isNum = !isNaN(target);
+      el.textContent = isNum ? '0' + suffix : target;
+      if (!isNum) return;
+      function step(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(eased * target) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    // ── Intersection Observer for stats ──
+    const statNums = document.querySelectorAll('.stat-number');
+    const statsData = [7, null, null]; // only first is numeric
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(statNums[0], 7, '');
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    if (statNums.length) observer.observe(statNums[0]);
+
+    // ── Input live formatting hint ──
+    const bidInput = document.getElementById('bid-amount');
+    const hint = document.querySelector('.form-hint');
+
+    bidInput.addEventListener('input', () => {
+      const val = Number(bidInput.value);
+      if (val > 0) {
+        hint.textContent = `Your bid: ${formatRM(val)} · All offers considered`;
+        hint.style.color = '#6c63ff';
+      } else {
+        hint.textContent = 'Minimum offer accepted: RM 1 · All serious offers considered';
+        hint.style.color = '#9ca3af';
+      }
+    });
+  </script>
+
+</body>
+</html>
