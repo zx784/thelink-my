@@ -98,13 +98,22 @@
 
     .nav-logo {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 22px;
-      font-weight: 700;
-      background: linear-gradient(90deg, var(--accent2), var(--accent3));
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      background: linear-gradient(90deg, #ffe066 0%, #ff8c42 22%, #ff4fc8 45%, #a78bfa 65%, #38bdf8 85%, #ffe066 100%);
+      background-size: 200% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      letter-spacing: -0.5px;
+      animation: shiny-logo 3s linear infinite;
+      filter: drop-shadow(0 0 10px rgba(167,139,250,0.7)) drop-shadow(0 0 24px rgba(56,189,248,0.45));
+      text-shadow: none;
+    }
+
+    @keyframes shiny-logo {
+      0%   { background-position: 0% center; }
+      100% { background-position: 200% center; }
     }
 
     .nav-badge {
@@ -139,7 +148,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 40px;
-      align-items: stretch;
+      align-items: start;
+      grid-template-rows: auto 1fr;
     }
 
     /* ─── Left Column ────────────────────────────────────────── */
@@ -278,106 +288,6 @@
       letter-spacing: 0.5px;
     }
 
-    /* ─── Seller Profile Card ─────────────────────────────────── */
-    .seller-card {
-      margin-top: auto;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      transition: border-color 0.3s, background 0.3s, transform 0.3s;
-    }
-
-    .seller-card:hover {
-      background: var(--soft2);
-      border-color: rgba(108,99,255,0.35);
-    }
-
-    .seller-avatar {
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center top;
-      border: 3px solid var(--accent);
-      flex-shrink: 0;
-      box-shadow: 0 0 0 6px rgba(108,99,255,0.15);
-    }
-
-    .seller-info { flex: 1; }
-
-    .seller-name {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 4px;
-    }
-
-    .seller-title {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin-bottom: 10px;
-    }
-
-    .seller-badges {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .badge {
-      font-size: 11px;
-      font-weight: 600;
-      padding: 3px 10px;
-      border-radius: 100px;
-      letter-spacing: 0.3px;
-    }
-
-    .badge-verified {
-      background: rgba(34,197,94,0.15);
-      border: 1px solid rgba(34,197,94,0.3);
-      color: #4ade80;
-    }
-
-    .badge-domain {
-      background: rgba(108,99,255,0.15);
-      border: 1px solid rgba(108,99,255,0.3);
-      color: var(--accent2);
-    }
-
-    .badge-malaysia {
-      background: rgba(239,68,68,0.12);
-      border: 1px solid rgba(239,68,68,0.25);
-      color: #f87171;
-    }
-
-    .seller-wa-btn {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background: linear-gradient(135deg, #25d366, #128c7e);
-      color: #fff;
-      border-radius: 100px;
-      padding: 10px 18px;
-      font-size: 13px;
-      font-weight: 700;
-      text-decoration: none;
-      transition: var(--transition);
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    .seller-wa-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 24px rgba(37,211,102,0.35);
-    }
-
-    .seller-wa-btn svg { width: 18px; height: 18px; }
-
     /* ─── Right Column ───────────────────────────────────────── */
     .right-col {
       display: flex;
@@ -403,9 +313,6 @@
       50% { box-shadow: var(--shadow), 0 0 0 1px rgba(108,99,255,0.5), 0 0 32px 4px rgba(108,99,255,0.2); }
     }
 
-    .seller-card {
-      animation: fadeUp 0.7s 0.6s ease both, border-glow 3s 1.5s ease-in-out infinite;
-    }
 
     /* ─── Offer Card ─────────────────────────────────────────── */
     .offer-card {
@@ -887,9 +794,9 @@
 
     /* ─── Responsive ─────────────────────────────────────────── */
     @media (max-width: 1024px) {
-      .main-grid { grid-template-columns: 1fr; gap: 32px; }
-      .left-col { order: 2; }
-      .right-col { order: 1; }
+      .main-grid { grid-template-columns: 1fr; gap: 32px; grid-template-rows: auto; }
+      .left-col  { order: 1; }
+      .right-col { order: 2; }
       .hero-domain { font-size: clamp(48px, 10vw, 72px); }
     }
 
@@ -912,9 +819,6 @@
       .hero-domain { font-size: 42px; letter-spacing: -2px; }
       .stats-row { grid-template-columns: 1fr 1fr; }
       .stats-row .stat-box:last-child { grid-column: 1 / -1; }
-      .seller-card { flex-direction: column; text-align: center; }
-      .seller-badges { justify-content: center; }
-      .seller-wa-btn { width: 100%; justify-content: center; }
       .price-display { flex-direction: column; gap: 12px; align-items: flex-start; }
       .trust-row { justify-content: flex-start; }
       #toast { left: 16px; right: 16px; bottom: 20px; }
@@ -992,26 +896,6 @@
           </div>
         </div>
 
-        <!-- Seller Profile -->
-        <div class="seller-card">
-          <img class="seller-avatar" src="assets/profile.jpg" alt="Domain Owner" />
-          <div class="seller-info">
-            <div class="seller-name">Domain Owner</div>
-            <div class="seller-title">Direct Sale · No Brokers · No Commission</div>
-            <div class="seller-badges">
-              <span class="badge badge-verified">✓ Verified Seller</span>
-              <span class="badge badge-domain">Domain Investor</span>
-              <span class="badge badge-malaysia">🇲🇾 Malaysia</span>
-            </div>
-          </div>
-          <a class="seller-wa-btn" href="https://wa.me/60172720482?text=Hi%2C%20I%20found%20your%20thelink.my%20domain%20for%20sale.%20I%27d%20like%20to%20learn%20more." target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-            </svg>
-            Chat Now
-          </a>
-        </div>
-
       </div><!-- /LEFT COLUMN -->
 
       <!-- RIGHT COLUMN -->
@@ -1037,8 +921,8 @@
             <div class="price-display">
               <div>
                 <div class="price-label">Asking Price</div>
-                <div class="price-value" id="asking-price">$85,000</div>
-                <div class="price-note">Or best offer · Negotiable · USD</div>
+                <div class="price-value" id="asking-price">RM 99,000</div>
+                <div class="price-note">Or best offer · Negotiable · RM</div>
               </div>
               <div class="price-tag">PREMIUM</div>
             </div>
@@ -1049,7 +933,7 @@
               <div class="form-group">
                 <label class="form-label" for="bid-amount">Your Bid Amount <span>*</span></label>
                 <div class="input-wrap">
-                  <span class="input-prefix">$</span>
+                  <span class="input-prefix" style="font-size:13px;font-weight:800;left:12px;">RM</span>
                   <input
                     class="offer-input"
                     id="bid-amount"
@@ -1058,9 +942,10 @@
                     min="1"
                     required
                     autocomplete="off"
+                    style="padding-left:52px;"
                   />
                 </div>
-                <div class="form-hint">Minimum offer accepted: $1 · All serious offers considered</div>
+                <div class="form-hint">Minimum offer accepted: RM 1 · All serious offers considered</div>
               </div>
 
               <div class="offer-name-row form-group">
@@ -1136,7 +1021,7 @@
       </div>
       <div class="footer-right">
         <a class="footer-link" href="https://wa.me/60172720482?text=Hi%2C%20I%27m%20interested%20in%20thelink.my.%20Can%20we%20discuss%3F" target="_blank" rel="noopener">+60 17-272 0482</a>
-        <span class="footer-link" style="cursor:default">© 2025</span>
+        <span class="footer-link" style="cursor:default">© 2026</span>
       </div>
     </footer>
 
@@ -1179,20 +1064,20 @@
       }
 
       const amount = Number(amountRaw);
-      const formattedAmount = '$' + Number(amount).toLocaleString('en-US');
+      const formattedAmount = 'RM ' + Number(amount).toLocaleString('en-MY');
 
       // Build WhatsApp message
       let msg = `Hello! I would like to make an offer for the domain *thelink.my*.\n\n`;
-      msg += `💰 *My Offer: ${formattedAmount}*\n`;
-      if (name)    msg += `👤 Name: ${name}\n`;
-      if (company) msg += `🏢 Company: ${company}\n`;
+      msg += `- *My Offer: ${formattedAmount}*\n`;
+      if (name)    msg += `- Name: ${name}\n`;
+      if (company) msg += `- Company: ${company}\n`;
       msg += `\nPlease let me know if this works for you. Thank you!`;
 
       const waNumber = '60172720482';
       const waURL = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
 
       // Show toast
-      showToast(`🚀 Sending your offer of ${formattedAmount} via WhatsApp…`);
+      showToast(`Sending your offer of ${formattedAmount} via WhatsApp…`);
 
       // Delay redirect slightly so toast shows
       setTimeout(() => {
@@ -1236,10 +1121,10 @@
     bidInput.addEventListener('input', () => {
       const val = Number(bidInput.value);
       if (val > 0) {
-        hint.textContent = `Your bid: $${Number(val).toLocaleString('en-US')} · All offers considered`;
+        hint.textContent = `Your bid: RM ${Number(val).toLocaleString('en-MY')} · All offers considered`;
         hint.style.color = '#6c63ff';
       } else {
-        hint.textContent = 'Minimum offer accepted: $1 · All serious offers considered';
+        hint.textContent = 'Minimum offer accepted: RM 1 · All serious offers considered';
         hint.style.color = '#9ca3af';
       }
     });
